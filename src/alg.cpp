@@ -15,7 +15,7 @@ int priority(char const sym) {
   return -1;
 }
 std::string infx2pstfx(std::string inf) {
-  string result = "";
+  std::string result = "";
   int i = 0;
   TStack <char, 5> fstack;
   while (i < inf.length()) {
@@ -62,7 +62,7 @@ std::string infx2pstfx(std::string inf) {
   }
   return result;
 }
-int res(string first, string second, char oper) {
+int res(std::string first, std::string second, char oper) {
   int num1 = 0;
   int num2 = 0;
   num1 = stoi(first);
@@ -82,13 +82,13 @@ int operat(int first, int second, char oper) {
     case'/':return  first / second;;
   }
 }
-int res(string first) {
+int res(std::string first) {
   return stoi(first);
 }
 int eval(std::string pref) {
   TStack <int, 5> sstack;
   int i = 0;
-  string number;
+  std::string number;
   int first;
   int second;
   while (i < pref.size()) {
