@@ -6,7 +6,7 @@ template<typename T, int size>
 class TStack {
 public:
   TStack() {
-    this->size = size;
+    this->size = 10;
     this->locSize = -1;
     this->arr = new T[size];
   };
