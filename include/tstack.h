@@ -2,11 +2,11 @@
 #ifndef INCLUDE_TSTACK_H_
 #define INCLUDE_TSTACK_H_
 
-template<typename T, int size>
+template<typename T, int size1>
 class TStack {
 public:
   TStack() {
-    this->size = 10;
+    this->size = size1;
     this->locSize = -1;
     this->arr = new T[size];
   };
