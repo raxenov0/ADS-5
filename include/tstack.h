@@ -7,10 +7,11 @@ class TStack {
  private:
     int size;
     int locSize;
-    T* arr = new T[size];
+    T* arr;
  public:
     TStack() {
       this->size = size1;
+      this->arr = new T[size]
       this->locSize = -1;
     }
     ~TStack() {
