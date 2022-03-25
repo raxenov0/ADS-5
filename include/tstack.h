@@ -4,6 +4,10 @@
 
 template<typename T, int size1>
 class TStack {
+ private:
+    int size;
+    int locSize;
+    T* arr;
  public:
     TStack() {
       this->size = size1;
@@ -34,9 +38,5 @@ class TStack {
       else
         return false;
     }
- private:
-    int size;
-    int locSize;
-    T* arr;
 };
 #endif  // INCLUDE_TSTACK_H_
