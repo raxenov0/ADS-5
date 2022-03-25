@@ -8,7 +8,7 @@ class TStack {
     int size;
     int locSize;
     T* arr;
-    
+
  public:
     TStack() {
       this->size = size1;
