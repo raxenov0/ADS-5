@@ -72,7 +72,7 @@ int res(std::string first, std::string second, char oper) {
     case'-': return  num1 - num2;;
     case '*': return  num1 * num2;;
     case'/':return  num1 / num2;
-  };
+  }
 }
 int operat(int first, int second, char oper) {
   switch (oper) {
@@ -80,7 +80,7 @@ int operat(int first, int second, char oper) {
     case'-': return  first - second;;
     case '*': return  first * second;;
     case'/':return  first / second;
-  };
+  }
 }
 int res(std::string first) {
   return stoi(first);
