@@ -35,7 +35,7 @@ std::string infx2pstfx(std::string inf) {
         result += " ";
         result += fstack.pop_back();
         result += " ";
-        while ((priority(inf[i]) <= priority(fstack.getLast()) || 
+        while ((priority(inf[i]) <= priority(fstack.getLast()) ||
                 fstack.getLast() != '(') && !fstack.empty()) {
           result += " ";
           result += fstack.pop_back();
